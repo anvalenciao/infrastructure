@@ -1,0 +1,50 @@
+<div class="row">
+  <div class="col-md-12 col-lg-6">
+    <h3>Orden Vehículo</h3>
+    <p>Ordenes conectadas con el sistema de mantenimiento.</p>
+  </div>
+  <div class="col-md-12 col-lg-6 text-right">
+    <button type="button" class="btn btn-dark" id="btn-show-form" onclick="toggleContentForm()">Crear</button>
+  </div>
+</div>
+
+<div id="table-json"></div>
+
+<form id="form-json" onsubmit="return sendForm(this, 'createVehicleOrder')">
+  <div class="form-group">
+    <label for="idTypeVehicle">Tipo de Vehículo</label>
+    <select class="form-control" id="idTypeVehicle" name="idTypeVehicle">
+      <option value="1">Bus</option>
+      <option value="2">Scooter</option>
+    </select> 
+  </div>
+  <div class="form-group">
+    <label for="idVehicle">Vehículo</label>
+    <input type="text" class="form-control" id="idVehicle" name="idVehicle" aria-describedby="idVehicleHelp" placeholder="ID Vehículo" required>
+    <small id="idVehicleHelp" class="form-text text-muted">Identificador del vehículo</small>
+  </div>
+  <div class="form-group">
+    <label for="idZone">Zona</label>
+    <select class="form-control" id="idZone" name="idZone">
+      <option value="1">Zona 1</option>
+      <option value="2">Zona 2</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="idSpecialty">Especialidad</label>
+    <select class="form-control" id="idSpecialty" name="idEspecialidad">
+      <option value="1">Especialidad 1</option>
+      <option value="2">Especialidad 2</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="idTypeMaintenance">Tipo de Mantenimiento</label>
+    <select class="form-control" id="idTypeMaintenance" name="idTipoMantenimineto">
+      <option value="1">Mantenimiento 1</option>
+      <option value="2">Mantenimiento 2</option>
+    </select>
+  </div>
+  <input type="hidden" name="client" value="D27B01F1-37F4-4047-871B-4381008B04B6">
+  <button type="submit" class="btn btn-dark">Envíar</button>
+  <button type="button" class="btn btn-light" id="btn-show-content" onclick="toggleContentForm()">Cancelar</button>
+</form>
