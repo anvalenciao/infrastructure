@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+
+    <title>Tarjeta Multimodal</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="description" content="Sistema de transporte multimodal - Tarjeta">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+
+    <link href="logo.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap">
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/loading.css">
+    <link rel="stylesheet" href="css/card.css">
+
+    <script defer src="js/card.js"></script>
+
+  </head>
+  <body class="text-center">
+    <div id="loader">
+      <div class = "centered">
+        <div class="blob-1"></div>
+        <div class="blob-2"></div>
+      </div>
+    </div>
+
+    <form id="form-signin" onsubmit="return sendForm(this, 'login')">
+      <h1 class="mb-3">Bienvenido</h1>
+      <img class="mb-4" src="img/person-24px.svg" alt="" width="72" height="72">
+      <label for="cardNumber" class="sr-only">Email address</label>
+      <input class="form-control" type="text" id="cardNumber" name="cardNumber" placeholder="Número de tarjeta" required autofocus>
+      <button class="btn btn-lg btn-dark btn-block" type="submit">Ingresar</button>
+      <p class="mt-5 mb-3 text-muted">&copy; Infraestructura 2019</p>
+    </form>
+  </body>
+</html>

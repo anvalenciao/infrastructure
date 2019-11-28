@@ -32,7 +32,7 @@ var pageInit = {
     home: function() {},
     orderVehicle: function() {    
         $loader.style.display = "block";
-        fetch('https://www.backendmantenimiento.somee.com/api/orders/filterAll')
+        fetch('http://www.backendmantenimiento.somee.com/api/orders/filterAll')
             .then(function(response) {
                 return response.json().then(function(json) {
                     $loader.style.display = "none";
