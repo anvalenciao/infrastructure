@@ -43,7 +43,7 @@ var formAction = {
       "idzona": data.idZone
     };
     console.log(data);
-    fetch("http://www.backendmantenimiento.somee.com/api/orders/create/vehicle", {
+    fetch("https://www.backendmantenimiento.somee.com/api/orders/create/vehicle", {
       method: 'POST', // or 'PUT'
       body: JSON.stringify(data), // data can be `string` or {object}!
       headers:{
