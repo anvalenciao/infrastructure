@@ -49,6 +49,7 @@ var pageInit = {
                         ],
                         columns:[                 //define the table columns
                             {title:"id", field:"id"},
+                            {title:"Estado", field:"serviceStatusName"},
                             {title:"Observación", field:"observation"}
                         ],
                     });
